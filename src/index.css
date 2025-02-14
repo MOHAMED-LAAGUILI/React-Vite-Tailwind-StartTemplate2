@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
     --primary: #3758F9;
     --secondary: #142b9e;
@@ -9,12 +10,14 @@
     --background: #ffffff;
     --shadow-color: rgba(0, 0, 0, .2)
 }
+
 body,
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    box-sizing:border-boxsdsd
-}
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
 
 
 

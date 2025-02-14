@@ -9,7 +9,7 @@ const checkIcon = (
 
 const AboutSectionOne = () => {
   const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
+    <p className="mb-5 flex items-center text-base sm:text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>
@@ -18,14 +18,14 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
-      <div className="container">
+    <section id="about" className="py-16 md:py-20 lg:py-28">
+      <div className="container px-4 mx-auto">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
+          <div className="flex flex-wrap items-center -mx-4">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                paragraph="The main 'thrust' is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
                 mb="44px"
               />
 
@@ -33,7 +33,7 @@ const AboutSectionOne = () => {
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
               >
-                <div className="mx-[-12px] flex flex-wrap">
+                <div className="flex flex-wrap -mx-3 dark:text-white" >
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Premium quality" />
                     <List text="Tailwind CSS" />
@@ -57,8 +57,7 @@ const AboutSectionOne = () => {
                 <img
                   src="https://www.uctoday.com/wp-content/uploads/2023/03/How-to-Integrate-Microsoft-Teams-Rooms-With-Other-Conference-Room-Technology.jpg"
                   alt="about-image"
-                  
-                  className="mx-auto max-w-full lg:mr-0"
+                  className="mx-auto max-w-full rounded-lg shadow-lg"
                 />
               </div>
             </div>

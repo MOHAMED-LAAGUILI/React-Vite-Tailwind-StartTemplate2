@@ -7,10 +7,11 @@ import { useEffect, useState } from "react";
 import logo from "../assets/imgs/favicon.ico";
 import Preloader from "./../Components/Preloader";
 import ScrollToTop from "./../Components/Scroll2Top";
+import FancyCursor from "../Components/Cursor/AnimatedCursor";
 
 export default function Layout({
   children,
-  title = "----------",
+  title = "Loading....",
   description = "----------------",
   keywords = "---------,-------,------",
   author = "-----",
@@ -114,7 +115,12 @@ export default function Layout({
         <link rel="icon" sizes="16x16" href={favicon_16x16} />
         <link rel="icon" sizes="32x32" href={favicon_32x32} />
         <link rel="icon" sizes="48x48" href={favicon_48x48} />
-        <link rel="icon" type="image/png" sizes="192x192" href={favicon_192x192} />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href={favicon_192x192}
+        />
         <link rel="mask-icon" href={favicon} color={color} />
         <meta name="msapplication-TileImage" href={favicon} />
 
@@ -128,6 +134,7 @@ export default function Layout({
         />
         <meta name="mobile-web-app-capable" content="yes" />
       </Helmet>
+
 
       {/* Header */}
       <Header />
@@ -159,6 +166,13 @@ export default function Layout({
           </div>
         </a>
       </div>
+ 
+ {/* FancyCursor  */}
+   <div className="relative z-51">
+   <FancyCursor />
+ </div>
+
+     
 
       {/* ScrollToTop Icon */}
       <ScrollToTop />

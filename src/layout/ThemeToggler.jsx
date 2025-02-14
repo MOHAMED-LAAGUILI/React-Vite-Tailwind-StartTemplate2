@@ -1,4 +1,6 @@
-import { FaMoon, FaSun } from "react-icons/fa";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { IoMoonOutline } from "react-icons/io5";
+
 import { useTheme } from "./ThemeContext";
 
 const ThemeToggle = () => {
@@ -7,9 +9,9 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg transition bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
+      className="p-2 rounded-full transition bg-gray-100 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 shadow-lg border"
     >
-      {theme === "dark" ? <FaSun className="w-6 h-6 text-yellow-400" /> : <FaMoon className="w-6 h-6 text-gray-900" />}
+      {theme === "dark" ? <MdOutlineWbSunny  className="w-6 h-6 text-yellow-400" /> : <IoMoonOutline  className="w-6 h-6 text-blue-900" />}
     </button>
   );
 };

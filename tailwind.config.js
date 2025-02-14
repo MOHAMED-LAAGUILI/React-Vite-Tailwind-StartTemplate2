@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1E40AF", // Blue-800
+        primary: "#1000AF", // Blue-800
         secondary: "#9333EA", // Purple-600
         accent: "#F59E0B", // Yellow-500
         darkBg: "#1a1a2e", // Custom dark mode background

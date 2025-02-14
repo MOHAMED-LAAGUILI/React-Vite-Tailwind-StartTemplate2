@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import SectionTitle from "../Common/SectionTitle";
+import { FaX } from "react-icons/fa6";
 
 Modal.setAppElement("#root"); // Ensure accessibility
 
@@ -57,7 +58,7 @@ const Video = () => {
             onClick={() => setOpen(false)} 
             className="absolute top-2 right-4 text-white text-2xl"
           >
-            ✖
+           <FaX/>
           </button>
           {/* Embedded YouTube Video */}
           <iframe
@@ -73,9 +74,7 @@ const Video = () => {
         </div>
       </Modal>
 
-      <div className="absolute bottom-0 left-0 right-0 z-[-1]">
-        <img src="https://i.ytimg.com/vi/wVCuNtZNBH4/maxresdefault.jpg" alt="shape" className="w-full" />
-      </div>
+      
     </section>
   );
 };

@@ -10,13 +10,13 @@ import Pricing from "../../Components/Pricing";
 
 function Home() {
   const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
+    initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
     transition: { duration: 0.6 },
   };
 
   return (
-    <Layout title={"Home"} description={"Main page"}>
+    <Layout title="Home Page" description={"Main page"}>
       <motion.div
         {...fadeInUp}
         transition={{ delay: 0.4 }}

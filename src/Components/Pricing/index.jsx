@@ -7,7 +7,7 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="flex justify-center relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Simple and Affordable Pricing"
@@ -59,7 +59,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 justify-center gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Lite"
             price={isMonthly ? "40" : "120"}
